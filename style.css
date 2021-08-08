@@ -1,0 +1,75 @@
+:root {
+    --kirby-height: 15rem;
+    --kirby-width: 15rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: goldenrod;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    justify-content: center;
+}
+.container {
+    margin: 0 auto;
+}
+#round {
+    border-radius: 50%;
+    min-height: var(--kirby-height);
+    min-width: var(--kirby-width);
+    background: linear-gradient(180deg, #f4a3b8, 50%, #f17998);
+}
+#face {
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    height: calc(var(--kirby-height) / 2);
+    min-width: 100%;
+    width: 100%;
+    /* border: 1px solid green; */
+    
+}
+
+.eyes {
+    border-radius: 70%;
+    height: calc((var(--kirby-height) / 2) * 0.8);
+    width: calc(var(--kirby-width) * .15);
+    margin-left:0.6rem;
+    margin-right: 0.6rem;
+    margin-top:1.5rem;
+    background: black;
+    border: 1px solid #ea7cc2;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid green; */
+}
+.pupil {
+    background: #f1f1f1;
+    border-radius: 130%;
+    min-height: 50%;
+    min-width: 75%;
+    width:75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: .3rem;
+}
+
+.cheek {
+    background: #f3707f;
+    border-radius:120%;
+    margin-top: 45%;
+    height: 20%;
+    width:calc(var(--kirby-width) * .16);
+}
+#left-cheek {
+    transform:rotate(20deg);
+}
+#right-cheek {
+    transform: rotate(-20deg);
+}
+
+#mouth {
+    
+}
