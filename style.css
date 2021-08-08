@@ -2,6 +2,7 @@
     --kirby-height: 15rem;
     --kirby-width: 15rem;
 }
+* { box-sizing: border-box;} 
 
 body {
     margin: 0;
@@ -36,14 +37,22 @@ body {
     border-radius: 70%;
     height: calc((var(--kirby-height) / 2) * 0.8);
     width: calc(var(--kirby-width) * .15);
-    margin-left:0.6rem;
-    margin-right: 0.6rem;
+    /* margin-left:0.6rem;
+    margin-right: 0.6rem; */
     margin-top:1.5rem;
     background: black;
     border: 1px solid #ea7cc2;
     display: flex;
     flex-direction: column;
     /* border: 1px solid green; */
+}
+#right-eye {
+    margin-left:.1rem;
+    margin-right: .6rem;
+}
+#left-eye {
+    margin-left:.6rem;
+    margin-right: .1rem;
 }
 .pupil {
     background: #f1f1f1;
@@ -71,5 +80,23 @@ body {
 }
 
 #mouth {
+    border-radius: 10% 10% 50% 50%;
+    width: calc(var(--kirby-width) * .15);
+    height: calc(var(--kirby-height) *.2);
+    background: #853054;
+    border: 0.25rem solid black;
+    margin-top: 47%;
+    /* position: */
+}
+
+#tongue {
+    border-radius: 100%;
+    background: #f16669;
+    min-height: 74%;
+    margin-top: 47%;
+    margin-left: -7.5%;
+  
+    width: 115%;
+    border: .25rem solid black;
     
 }
