@@ -267,8 +267,10 @@ body {
 }
 
 .buttons {
-    font-size: .5em;
+    font-size: .7em;
     opacity: .6;
+    border:2px solid black;
+   
 }
 
 #reload {
