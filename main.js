@@ -6,6 +6,10 @@ class attribute {
     add(){
         this.start++;
         this.tag.innerText = this.start;
+        if (this.start==10) {
+            this.reset()
+            document.querySelector("#gameover").style.display="block"
+        } 
     }
     subtract(){
         this.start--;
@@ -15,10 +19,14 @@ class attribute {
         this.start =0;
         this.tag.innerText = this.start;
     }
+    
 
 }
 class pet {
-    constructor
+    constructor(){
+        this.age= new attribute(0,)
+
+    }
 
 
 }

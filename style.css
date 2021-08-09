@@ -179,3 +179,13 @@ body {
 #left-arm {
     transform:rotate(-40deg);
 }
+
+#gameover {
+    display: none;
+    font-family: sans-serif;
+    font-size:1.8em;
+    color: maroon;
+    position:fixed; 
+     z-index: 10000; 
+     top: 0;
+}
