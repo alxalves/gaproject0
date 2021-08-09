@@ -146,7 +146,7 @@ body {
     z-index: 997;
     background: black;
     border-radius: 100%;
-    left:39.7%;
+    left:39.75%;
     top: calc(59.4% - var(--kirby-height));
 }
 
@@ -154,14 +154,15 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    width: calc(var(--kirby-width)*1.3);
-    min-width: calc(var(--kirby-width)*1.3);
+    width: calc(var(--kirby-width)*1.4);
+    min-width: calc(var(--kirby-width)*1.4);
     min-height: calc(var(--kirby-height)*.5);
     height: calc(var(--kirby-height)*.5);
     left: 37.5%;
+    margin-top: -5rem;
     position: fixed;
     z-index: 998;
-    border: 1px solid red;
+
 }
 
 .arm {
@@ -169,6 +170,12 @@ body {
     border-radius: 80%;
     border: .4rem solid black;
     min-width: 45%;
-    min-height: 30%;
-    height: 60%;
+    min-height: 65%;
+    height: 65%;
+}
+#right-arm {
+    transform: rotate(40deg);
+}
+#left-arm {
+    transform:rotate(-40deg);
 }
