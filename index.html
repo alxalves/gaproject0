@@ -10,10 +10,24 @@
 </head>
 <body>
         <div id="gameover" class="died">You ded</div>
-        <div id="age" class="age"></div>
-        <div id="boredom" class="boredom"></div>
-        <div id="hunger" class="hunger"></div>
-        <div id="sleepiness" class="sleepiness"></div>
+        <div class="age">Age: <span id="age">0</span></div>
+
+
+        <div class="boredom">
+            Boredom: 
+            <span id="boredom">0</span>
+        <button onclick="Kirby.boredom.subtract()">Play</button>
+        
+        </div>
+        <div class="hunger">Hunger: <span id="hunger">0</span>
+        <button onclick="Kirby.hunger.subtract()">FEED</button>
+        </div>
+        
+
+
+        <div class="sleepiness">Sleepiness: <span id="sleepiness">0</span>
+        <button onclick="Kirby.sleepiness.subtract()">Naptime</button>
+        </div>
 
 
 

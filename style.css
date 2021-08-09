@@ -188,4 +188,52 @@ body {
     position:fixed; 
      z-index: 10000; 
      top: 0;
+     right: 0;
+}
+
+#age {
+    color: black;
+}
+.age {
+
+    color: black;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    font-size:2em;
+
+}
+#boredom {
+    color: black;
+
+}
+.boredom {
+    top: 1em;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    font-size:2em;
+}
+#hunger {
+    color: black;
+
+}
+.hunger {
+    top: 2em;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    font-size:2em;
+}
+#sleepiness {
+    color: black;
+
+}
+.sleepiness {
+    top: 3em;
+    left: 0;
+    position: fixed;
+    z-index: 1000;
+    font-size:2em;
 }
