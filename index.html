@@ -6,27 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src= "./main.js" defer></script>
     <link href="./style.css" rel="Stylesheet" /> 
-    <title>Document</title>
+    <title>Project 0:Tamagatchi</title>
 </head>
 <body>
-        <div id="gameover" class="died">You ded</div>
+    <div id="gameboy" class="screen">
+        &nbsp;
+    </div>
+    <div id="gameboyside" class="screen">
+        &nbsp;
+    </div>
+        <div id="reload" class="resetbutton">
+            <button id="reset" class="resetbutton" onclick="window.location.reload()">Reset?</button>
+        </div>
+        <div id="gameover" class="died">Game Over</div>
         <div class="age">Age: <span id="age">0</span></div>
 
 
         <div class="boredom">
             Boredom: 
             <span id="boredom">0</span>
-        <button onclick="Kirby.boredom.subtract()">Play</button>
+        <button id="playbutton" class="buttons" onclick="Kirby.boredom.subtract()">Play</button>
         
         </div>
         <div class="hunger">Hunger: <span id="hunger">0</span>
-        <button onclick="Kirby.hunger.subtract()">FEED</button>
+        <button id="hungerbutton" class="buttons" onclick="Kirby.hunger.subtract()">FEED</button>
         </div>
         
 
 
         <div class="sleepiness">Sleepiness: <span id="sleepiness">0</span>
-        <button onclick="Kirby.sleepiness.subtract()">Naptime</button>
+        <button id="sleepybutton" class="buttons" onclick="Kirby.sleepiness.subtract()">Naptime</button>
         </div>
 
 

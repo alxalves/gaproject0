@@ -10,6 +10,7 @@ const gameOver= () =>{
         Kirby.sleepiness.reset()
         Kirby.hunger.reset()
     },2500)
+    document.querySelector("#reload").style.display = "block"
 }
 
 class attribute {
