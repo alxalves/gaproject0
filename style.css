@@ -216,6 +216,8 @@ body {
      z-index: 10000; 
      top: 100px;
      left: 700px;
+     animation-duration: 1.5s;
+     animation-name: fadeInDown;
      
 }
 
@@ -270,7 +272,6 @@ body {
     font-size: .7em;
     opacity: .6;
     border:2px solid black;
-   
 }
 
 #reload {
@@ -279,4 +280,15 @@ body {
     z-index:9999;
     left: 860px;
     display:none;
+    animation-duration: 1.5s;
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from{
+    margin-top: 0px;
+    }
+    to {
+    margin-top:40px;
+    }
 }
