@@ -1,3 +1,15 @@
+const setName= ()  => {
+    let nameText= document.getElementById("namepet").value
+
+   let hiddenHeader= document.getElementById("nameheader")
+   hiddenHeader.style.display="block"
+   hiddenHeader.innerText=nameText
+   document.querySelector("#namepet").style.display="none"
+   document.querySelector("#submit").style.display="none"
+
+}
+
+
 const gameOver= () =>{
     document.querySelector("#gameover").style.display = "block"
     clearInterval(Kirby.timers.age)
@@ -16,9 +28,10 @@ const gameOver= () =>{
 class attribute {
     //default to causing game over unless specified
     constructor (start,tag,gameOver = true){
-        this.start = start
-        this.tag= tag
+        this.start = start;
+        this.tag= tag;
         this.gameOver = gameOver;
+        // this.namePet=namePet;
     }
     add(){
         this.start++;
@@ -48,6 +61,8 @@ class pet {
         this.sleepiness= new attribute(0,document.querySelector("#sleepiness"))
         this.boredom= new attribute(0,document.querySelector("#boredom"))
         this.timers={}
+        // this.namePet= new attribute (submit,document.querySelector("petname"))
+
 
         this.startTimer();
     }
