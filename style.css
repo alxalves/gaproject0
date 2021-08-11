@@ -7,7 +7,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: goldenrod;
+    background-color: #eeeeee;
     display: flex;
     flex-flow: column nowrap;
     height: 100vh;
@@ -24,20 +24,22 @@ body {
     top: 50px;
     left:320px;
     right:250px;
-    z-index:989;  
-    background:#f0ead6;
+    z-index:991;  
+    /* background:#f0ead6; */
+    background:goldenrod;
 }
 #gameboyside {
-   border: 4px solid black;
     position: fixed;
-    width: 65%;
-    min-width:65%;
-    height: 130%;
-    min-height:130%;
+    width: 75%;
+    min-width:75%;
+    height: 88%;
+    min-height:88%;
     top: 0px;
-    left:300px;
+    left:210px;
     right:230px;
     z-index:990; 
+    border-radius: 2rem 2rem 7.5rem 2rem;
+    background:#777777;
 }
 
 .container {
@@ -159,9 +161,20 @@ body {
 }
 #left-foot {
     transform: rotate(-20deg);
+    animation-name:walk;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 #right-foot {
     transform: rotate(20deg);
+     animation-name:walk;
+    animation-delay: .4s;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 }
 
 #border {
@@ -224,6 +237,7 @@ body {
      left: 700px;
      animation-duration: 1.5s;
      animation-name: fadeInDown;
+     animation-fill-mode: forwards;
      
 }
 
@@ -288,14 +302,18 @@ body {
     display:none;
     animation-duration: 1.5s;
     animation-name: fadeInDown;
+    animation-fill-mode: forwards;
+}
+#reset {
+    font-size:1.3rem;
 }
 
 @keyframes fadeInDown {
     from{
-    margin-top: 0px;
+    transform:translateY(0px);
     }
     to {
-    margin-top:30px;
+    transform:translateY(22px);
     }
 }
 
@@ -312,7 +330,71 @@ body {
     position:fixed;
     top:150px;
     font-size: larger;
-    left:750px;
+    left: 35%;
     z-index: 993;
+}
 
+#nameheader{
+    display:none;
+    position: fixed;
+    z-index: 1000;
+    top: 650px;
+    left: 44.5%;
+    color:maroon;
+}
+@keyframes walk {
+    from{
+        transform:rotateX(0deg)
+    }
+    to{
+        transform:rotateX(60deg)
+    }
+}
+
+#Nameofpet {
+    font-size:1.3em;
+}
+#submit {
+    font-size: 1.2em;
+    border-radius: 8%;
+    opacity:.6;
+}
+#namepet {
+    font-size:1.2em;
+    opacity:.6;
+}
+
+#dunce {
+    width: 0;
+    height:0;
+    top:19%;
+    left:37%;
+    border-left: 110px solid transparent;
+    border-right: 110px solid transparent;
+    border-bottom: 200px solid #f0ead6;
+    border-radius: 50%;
+    position:fixed;
+    z-index: 1001;
+    transform:rotateZ(-20deg);
+    display:none;
+    animation-name:duncecap;
+    animation-duration: 1s;
+
+}
+#duncetext{
+    font-size: 1.8em;
+    transform:translateY(1.2em) rotateZ(90deg);
+    font-family: "Comic Sans MS";
+}
+
+@keyframes duncecap {
+    from{
+        opacity:0;
+        transform:translateY(-50px) rotateZ(-20deg);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0px) rotateZ(-20deg);
+    }
+    
 }

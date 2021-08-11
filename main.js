@@ -1,3 +1,5 @@
+let Kirby
+
 const setName= ()  => {
     let nameText= document.getElementById("namepet").value
 
@@ -6,7 +8,8 @@ const setName= ()  => {
    hiddenHeader.innerText=nameText
    document.querySelector("#namepet").style.display="none"
    document.querySelector("#submit").style.display="none"
-
+   document.querySelector("#Nameofpet").style.display="none"
+    Kirby = new pet();
 }
 
 
@@ -23,6 +26,7 @@ const gameOver= () =>{
         Kirby.hunger.reset()
     },2500)
     document.querySelector("#reload").style.display = "block"
+    document.querySelector("#dunce").style.display = "block"
 }
 
 class attribute {
@@ -82,5 +86,12 @@ class pet {
         }, 1500)
     }
 }
+document.addEventListener("keyup",
+function (event) {
+    if(event.key === "Enter"){
+        document.querySelector("#submit").click()
+        document.removeEventListener("keyup")
+    }
+}
 
-let Kirby = new pet();
+)
